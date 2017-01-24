@@ -44,7 +44,6 @@ textarea {
 
 #uneatenBurgerZone, #eatenBurgerZone {
   width: 40%;
-  float: left;
 }
 
 #devourButtonZone {
@@ -54,9 +53,11 @@ textarea {
 
 #uneatenBurgerZone {
   background-color: green;
+    float: left;
 }
 
 #eatenBurgerZone {
   background-color: red;
+  float: right;
   clear: right;
 }
