@@ -9,19 +9,19 @@ router.get("/", function (req, res) {
 });
 
 router.get("/burgers", function (req, res) {
-  burger.selectAll(function(data) {
+  burger.getAll(function(data) {
     res.render("index", {burgers: data})
   });
 });
 
 router.post("/burgers/create", function (req, res) {
-  burger.insertOne(req.body.newBurger, req.body.devoured, function() {
+  burger.createNew(req.body.newBurger, req.body.devoured, function() {
     res.redirect("/burgers");
   });
 });
 
 router.put("/burgers/update/devour/:id", function (req, res) {
-  burger.updateOne(req.params.id, function() {
+  burger.devourOne(req.params.id, function() {
     res. redirect("/burgers");
   });
 });

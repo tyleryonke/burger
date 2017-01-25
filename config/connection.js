@@ -15,6 +15,4 @@ else {
   var connection = mysql.createConnection(config);
 }
 
-
-
 module.exports = connection;
