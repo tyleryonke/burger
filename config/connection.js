@@ -4,7 +4,7 @@ var config = {
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "PASSWORD GOES HERE",
+  password: "Timothy92",
   database: "burgers_db"
 };
 
